@@ -1,0 +1,119 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ProyectoClaseApp.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ProyectoClaseApp.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProyectoClaseApp.Dominio.dll": {}
+        }
+      },
+      "ProyectoClaseApp.Persistencia/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "ProyectoClaseApp.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProyectoClaseApp.Persistencia.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProyectoClaseApp.Persistencia.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProyectoClaseApp.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../ProyectoClaseApp.Dominio/ProyectoClaseApp.Dominio.csproj",
+      "msbuildProject": "../ProyectoClaseApp.Dominio/ProyectoClaseApp.Dominio.csproj"
+    },
+    "ProyectoClaseApp.Persistencia/1.0.0": {
+      "type": "project",
+      "path": "../ProyectoClaseApp.Persistencia/ProyectoClaseApp.Persistencia.csproj",
+      "msbuildProject": "../ProyectoClaseApp.Persistencia/ProyectoClaseApp.Persistencia.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "ProyectoClaseApp.Dominio >= 1.0.0",
+      "ProyectoClaseApp.Persistencia >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Oficina\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Proy_C\\ProyectoClase\\ProyectoClaseApp\\ProyectoClaseApp.Frontend\\ProyectoClaseApp.Frontend.csproj",
+      "projectName": "ProyectoClaseApp.Frontend",
+      "projectPath": "C:\\Proy_C\\ProyectoClase\\ProyectoClaseApp\\ProyectoClaseApp.Frontend\\ProyectoClaseApp.Frontend.csproj",
+      "packagesPath": "C:\\Users\\Oficina\\.nuget\\packages\\",
+      "outputPath": "C:\\Proy_C\\ProyectoClase\\ProyectoClaseApp\\ProyectoClaseApp.Frontend\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Oficina\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Proy_C\\ProyectoClase\\ProyectoClaseApp\\ProyectoClaseApp.Dominio\\ProyectoClaseApp.Dominio.csproj": {
+              "projectPath": "C:\\Proy_C\\ProyectoClase\\ProyectoClaseApp\\ProyectoClaseApp.Dominio\\ProyectoClaseApp.Dominio.csproj"
+            },
+            "C:\\Proy_C\\ProyectoClase\\ProyectoClaseApp\\ProyectoClaseApp.Persistencia\\ProyectoClaseApp.Persistencia.csproj": {
+              "projectPath": "C:\\Proy_C\\ProyectoClase\\ProyectoClaseApp\\ProyectoClaseApp.Persistencia\\ProyectoClaseApp.Persistencia.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.19, 3.1.19]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

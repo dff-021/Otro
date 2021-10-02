@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProyectoClaseApp.Dominio\ProyectoClaseApp.Dominio.csproj" />
+    <ProjectReference Include="..\ProyectoClaseApp.Persistencia\ProyectoClaseApp.Persistencia.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>

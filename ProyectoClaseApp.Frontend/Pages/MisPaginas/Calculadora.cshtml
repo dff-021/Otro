@@ -1,0 +1,66 @@
+﻿@page
+@model ProyectoClaseApp.Frontend.Pages.CalculadoraModel
+@{
+}
+
+<form method="get">
+  <table width="200" align="center">
+    <tr>
+      <td> <img src="https://numero.wiki/s/img/numeros-0-1-2-3-4-5-6-7-8-9.jpeg"></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <h1> Calculadora </h1>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <table width="200">
+          <tr>
+            <td><input type="text" name="NumeroI" size="5" asp-for="SostenerNumeroI"></td>
+            <td><select name="OperaSelect" id="list" asp-for="Seleccion">
+                <option value="Sumar"> Sumar</option>
+                <option value="Restar"> Restar</option>
+                <option value="Multiplicar"> Multiplicar</option>
+                <option value="Dividir"> Dividir</option>
+              </select></td>
+            <td><input type="text" name="NumeroII" size="5" asp-for="SostenerNumeroII"></td>
+            <td><input type="submit" value="Calcular"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+</br></br>
+ 
+<table class="table" align="center" border="3">
+    <tr>
+      <th>Identificador</th>
+      <th>Numero N°1 </th>
+      <th>Operador </th>
+      <th>Numero N°2 </th>
+      <th>Resultado </th>
+    </tr>
+    @foreach (var Listas in Model.Oper)
+    {
+        <tr>
+            <td width="200"><h5 align="center">@Listas.Id</h5></td>
+            <td width="200"><h5 align="center">@Listas.NumeroUno</h5></td>
+            <td width="200"><h5 align="center">@Listas.OperacionSeleccionada</h5></td>
+            <td width="200"><h5 align="center">@Listas.NumeroDos</h5></td>
+            <td width="200"><h5 align="center">@Listas.Resultado</h5></td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./PruebaEstilo" asp-route-saludoId="@Listas.Id">
+                    <i class="fas fa-info-circle fa-lg"></i>Editar</a>
+            </td>
+
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./PruebaEstilo" asp-route-saludoId="@Listas.Id">
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+<a asp-page=".\Edit" class="btn btn-primary">@Model.Seleccion</a>

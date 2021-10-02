@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ofs6hH1sm07FFuyP9IVPz8HM1IjhAWYKjC36AqL9o4IdpC6ZcHhbWW1Ph1D+4FkAWXmmUNFV+9UZsIsA2YTVHA==",
+  "success": true,
+  "projectFilePath": "C:\\Proy_C\\ProyectoClase\\ProyectoClaseApp\\ProyectoClaseApp.Frontend\\ProyectoClaseApp.Frontend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Oficina\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.19\\microsoft.netcore.app.host.win-x64.3.1.19.nupkg.sha512"
+  ],
+  "logs": []
+}
